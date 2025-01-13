@@ -11,6 +11,10 @@ html{
 
 /* Navbar */
 
+body{
+
+}
+
 .gradient-bg{
     background-image: linear-gradient( 160deg,#100717, #210d2e ,#100717);
     padding-bottom: 60px;
@@ -245,6 +249,12 @@ html{
         transform: rotate(0deg);
     }
     
+}
+
+.image-container img{
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
 }
 
 /* Hero section 2 */
@@ -1133,6 +1143,10 @@ section{
         top: 70px;
         left: 43%;
     }
+
+    .projects{
+        width: 100%;
+    }
 }
 
 @media (max-width: 430px) {
@@ -1167,6 +1181,11 @@ section{
 .a-letter{
     left: 40%;
 }
+
+.about-container{
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+
+    }
 }
 
 @media (max-width: 375px) {
@@ -1189,11 +1208,19 @@ section{
     .button{
         margin-left: 20%;
     }
-
+/* 
     .projects{
         width: 85%;
-    }
+    } */
     
+    .about-container{
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+
+    }
+
+    .hi{
+        display: none;
+    }
 }
 
 
