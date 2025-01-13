@@ -255,6 +255,8 @@ body{
     width: 100%;
     height: inherit;
     border-radius: inherit;
+    position: relative;
+    z-index: 11;
 }
 
 /* Hero section 2 */
