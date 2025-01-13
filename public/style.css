@@ -897,7 +897,7 @@ section{
         background-color: #311d58;
         padding: 30px 0;
         position: absolute;
-        top: 130px;
+        top: 90px;
         z-index: 100;
         width: 100%;
         left: 0;
@@ -906,11 +906,11 @@ section{
     }
 
     .nav-items a{
-        font-size: 30px;
+        font-size: 150%;
     }
 
     .nav-items li{
-        margin: 40px 0 0 100px;
+        margin: 40px 0 0 50px;
     }
 
     .hamburger-menu i{
@@ -1035,6 +1035,17 @@ section{
 
     .a-letter{
         left: 45%;
+    }
+}
+
+@media (max-width: 650px) {
+    /* .navbar{
+        width: 80%;
+    } */
+
+    .hero-section5{
+        flex-direction: column-reverse;
+        padding-top: 0;
     }
 }
 
