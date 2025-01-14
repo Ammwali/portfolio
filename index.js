@@ -26,10 +26,14 @@ app.post('/submit-form', async(req, res) => {
    
   try {
     const {fname, lname, email, phone, message} = req.body
+    
+    if (!fname || !lname || !email || !phone || !message) {
+      return res.status(400).json({ message: 'All fields are required!' });
+  }
     await FormData.create({fname, lname, email, phone, message})
-    res.status(201).json({message: 'Data Recieved'})
+    res.status(201).json({message: 'Form submitted successfully'})
   } catch (error) {
-    res.status(500).json({message: 'Error recieving data'})
+    res.status(500).json({message: 'Server error. Please try again'})
     console.log(error)
   }
     
